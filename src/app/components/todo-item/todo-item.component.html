@@ -1,0 +1,9 @@
+<div [ngClass]="setClasses()">
+  <p>
+    <input (change)="onToggle(todo)" type="checkbox">
+    {{ todo.title }}
+    <button (click)="onDelete(todo)" class="del">x</button>
+  </p>
+</div>
+
+<!-- in a template for a component, you MUST only have one root element, so before was the <p>. now it'll be the div, with the p within the div. usually divs are better since you can put other elements within them. -->

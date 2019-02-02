@@ -1,0 +1,10 @@
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+<app-todo-item
+*ngFor="let todo of todos"
+[todo]="todo"
+(deleteTodo)="deleteTodo($event)"
+> <!-- passing in property to the tag, each [todo]-->
+
+</app-todo-item>
+
+<!-- to generate a new component in Angular, use console within vs code, ng (for angular I presume), g (generate), c (component), then folder destination (components/TodoItem in this case) -->
