@@ -3,3 +3,5 @@ export class Todo {
   title:string;
   completed:boolean;
 }
+
+// todo list app pulls up on localhost:4200
